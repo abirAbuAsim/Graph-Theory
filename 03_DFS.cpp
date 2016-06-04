@@ -23,20 +23,17 @@ Vertex 5: Starting Time: 4 || Finishing Time: 7
 #include<bits/stdc++.h>
 using namespace std;
 int adjMatrix[100][100];
-int dist[100]; // distance of each vertex
 int color[100];
 int vertex[100];
 int d[100]; // discovery time
 int f[100]; // finishing time
 int pi[100];
-int s = 1; // source
 int u; // number of edges
 int v; // number of vertices
 int timer;
 
 void DFS_visit(int u)
 {
-
     timer = timer + 1;
     d[u] = timer;
     color[u] = 1;
@@ -72,8 +69,6 @@ void DFS()
         }
     }
 }
-
-
 
 int main()
 {
